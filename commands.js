@@ -47,11 +47,57 @@ const LINK_COMMAND = {
   contexts: [1],
 };
 
+const SWAP_COMMAND = {
+  name: 'swap',
+  type: 1,
+  description: 'Swap test command',
+  integration_types: [0, 1],
+  contexts: [0, 1, 2],
+};
+
+const SCHEDULE_COMMAND = {
+  name: 'schedule',
+  type: 1,
+  description: 'SCHEDULE test command',
+  integration_types: [0, 1],
+  contexts: [0, 1, 2],
+};
+
+const SKIP_COMMAND = {
+  name: 'skip',
+  type: 1,
+  description: 'SKIP test command',
+  integration_types: [0, 1],
+  contexts: [0, 1, 2],
+};
+
+const RESET_COMMAND = {
+  name: 'reset',
+  type: 1,
+  description: 'RESET test command',
+  integration_types: [0, 1],
+  contexts: [0, 1, 2],
+};
+
+const UPDATE_COMMAND = {
+  name: 'update',
+  type: 1,
+  description: 'UPDATE test command',
+  integration_types: [0, 1],
+  contexts: [0, 1, 2],
+};
+
+
 const ALL_COMMANDS = [
   WIKI_COMMAND,
   LEADERBOARD_COMMAND,
   PROFILE_COMMAND,
   LINK_COMMAND,
+  SWAP_COMMAND,
+  SCHEDULE_COMMAND,
+  SKIP_COMMAND,
+  RESET_COMMAND,
+  UPDATE_COMMAND
 ];
 
 InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);

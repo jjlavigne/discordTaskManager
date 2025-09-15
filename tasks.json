@@ -1,0 +1,8 @@
+{
+  "days": 7,
+  "tasks": {
+    "dog_walking": ["Ban", "Nel", "Ju"],
+    "cooking": ["Nel", "Ju", "Declan", "Brandon"]
+  }
+}
+
